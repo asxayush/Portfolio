@@ -1,87 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayush Dev</title>
-  </head>
-  <body>
-   <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AYUSH SINHA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(5, 5, 61);
+            color: aliceblue;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(23, 23, 56);
+        }
+        nav ul {
+            display: flex;
+           justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover{
+            color: antiquewhite;
+            
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px 0px  ;
+        }
+
+        .leftSection {
+          
+            font-size: 3rem;
+        }
+
+         .firstSection > div{
+            width: 30%;
+        }
+
+        .rightSection img {
+            width: 70%;
+            margin: 3px 3px ;
+        }
+
+       .purple {
+        color: blueviolet;
+       }
+
+       #element {
+       color: blueviolet;
+       }
+       .secondSection{
+        margin: auto;
+       }
+    </style>
+</head>
+<body>
     <header>
-      <h1>Ayush Sinha: Web Developer</h1>
-      <table>
-        <tr>
-          <td>
-            <img src="ayushsinha.jpg" height="200" alt="Ayush Sinha">
-          </td>
-        </tr>
-      </table>
-      <p>
-       Hi, I’m Ayush Sinha, a first-year B.Tech Computer Science student passionate about learning how software really works, from low-level programming in C to building interactive web applications.
-
-I’m currently exploring C programming, HTML, CSS, and JavaScript, and working on small projects to strengthen my core fundamentals. I enjoy understanding how systems interact, writing clean and efficient code, and continuously improving through hands-on practice.
-
-Alongside my technical learning, I’m also diving into Git and open-source development, aiming to contribute to collaborative projects that make a real impact.
-
-Current Focus: Strengthening programming logic, learning web fundamentals, and improving version control skills.
-
-Interests: Systems programming, backend development, open source, and tech communities.
-
-Let’s Connect: I’m always open to networking, collaborating on beginner-friendly projects, or learning from experienced developers.
-      </p>
+        <nav>
+            
+            <div class="left">Ayush Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">About me</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <section>
-      <h2>Languages
-      </h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Javascript</li>
-        <li>C Programming</li>
-      </ul>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+               Hello, I am <span class="purple">Ayush Sinha</span> and I am a Backend Node Js Developer....
+               <span id="element"></span>
+            </div>
+            
 
-      <h2>
-        Frameworks and Tools
-      </h2>
-      <ul>
-        <li>Git</li>
-        <li>VS Code</li>
-      </ul>
-    </section>
+            <div class="rightSection">
+                <img src="/assets/ayushsinha.jpg" alt="" srcset="">
+            </div>
+        </section>
+<hr>
+        <section class="secondSection">
+            <h1>Past Experience</h1>
+        </section>
+    </main>
 
-    <section>
-      <h2>Projects</h2>
-      <ol>
-        <li> <a href="#" target="_blank">Not available </a></li>
-        <li>
-            <a href="#" target="_blank">Not available</a>
-        </li>
-      </ol>
-    </section>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
 
-    <section>
-        
-      <h2>Education</h2>
-        <p>B.Tech in Computer Science - RKGIT (2025 - Present)</p>
-    </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p class="contact">
-          
-          <button class="mail">
-            <a href="mailto:as.ayushh1@gmail.com">Email Me</a>
-          </button>
-        
-          <button class="linkedin">
-            <a href="https://www.linkedin.com/in/ayush-sinha-965212316/" target="_blank">LinkedIn</a>
-          </button>
-          
-          <button class="Github">
-            <a href="https://github.com/asxayush" target="_blank"> Github</a>
-          </button>
-        </p>
-    </section>
-  </body>
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['<i>Web Developer', '&amp; Specially Backend.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
 </html>
