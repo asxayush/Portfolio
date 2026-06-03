@@ -74,10 +74,28 @@
        }
        .secondSection{
         margin: auto;
-       }
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        }
+       
 
        .secondSection p img {
+        margin 10px 10px;
+        padding: 5px 5px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
         width: 50px;
+        border-radius: 50%;
+
+       }
+       
+       .secondSection p img:hover{
+        size: 200px;
        }
     </style>
 </head>
@@ -113,7 +131,7 @@
         <section class="secondSection">
             <h1>Language and Frameworks</h1>
             <p><img class="logo"src="/assets/html5-logo-png_seeklogo-206834.webp" alt="">HTML</p>
-            <p><img class="logo"src="/assets/css3-vector-logo-seeklogo.zip" alt="">CSS</p>
+            <p><img class="logo"src="/assets/css3-seeklogo.png" alt="">CSS</p>
             <p><img class="logo"src="/assets/nodejs-logo-png_seeklogo-373130.png" alt="">Node.js</p>
             <p><img class="logo"src="/assets/mongodb-logo-png_seeklogo-273731.png" alt="">MongoDB</p>
             <p><img class="logo"src="/assets/javascript-logo-png_seeklogo-255387.png" alt="">JavaScript</p>
