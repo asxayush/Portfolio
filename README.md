@@ -1,2 +1,4 @@
 # Portfolio
-Just for testing
+Made with Nextjs
+
+In Progress
