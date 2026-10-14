@@ -1,4 +1,1 @@
-# Portfolio
-Made with Nextjs
-
-In Progress
+Hi, I am Ayush 
