@@ -1,7 +1,11 @@
-import Image from "next/image";
+import About from "../components/layout/About";
+import Navbar from "../components/layout/navbar";
 
 export default function Home() {
   return (
-   <>Welcome to the Home Page</>
+    <main id="home" className="min-h-screen bg-slate-50">
+      <Navbar />
+      <About />
+    </main>
   );
 }
